@@ -273,6 +273,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .cells .fine { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line-2); font-size: 12px; color: var(--mute) !important; }
 
 /* team */
+.team .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line-2); display: block; }
+.email a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line-2); margin-left: 8px; }
+.email a:hover { border-bottom-color: var(--ink); }
 .team .initials { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 1px solid var(--line-2); font-size: 13px; color: var(--dim); }
 .role { font-size: 12px !important; letter-spacing: .1em; text-transform: uppercase; color: var(--mute) !important; margin-top: -6px; }
 .placeholder { color: var(--warn) !important; background: var(--warn-fill); border: 1px dashed var(--warn); padding: 8px 10px; font-size: 14px !important; }
