@@ -1,6 +1,6 @@
 /* NAAMI comic look: cream paper, black ink, red and yellow, thick outlines with hard offset shadows. */
 :root{--paper:#f5f0e6;--ink:#0d0d0d;--red:#e63946;--yellow:#f4d35e;--soft:#4a4640;--card:#fffdf8;
-  --display:"Clash Display","Arial Narrow",system-ui,sans-serif;--body:"Satoshi",system-ui,-apple-system,"Segoe UI",sans-serif}
+  --display:"Bangers","Comic Sans MS",system-ui,sans-serif;--body:"Satoshi",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
@@ -8,17 +8,17 @@ img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 .wrap{width:min(1120px,100% - 32px);margin-inline:auto}
 section{padding-block:56px}
-h1,h2,h3{font-family:var(--display);margin:0;line-height:1.02;letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1;letter-spacing:.03em}
 h1{font-size:clamp(42px,7.4vw,88px);text-transform:uppercase}
 h2{font-size:clamp(30px,4.4vw,48px);text-transform:uppercase;margin-bottom:24px}
-h3{font-size:22px}
+h3{font-size:26px}
 .hl{color:var(--red);-webkit-text-stroke:0}
 .kicker{display:inline-block;background:var(--yellow);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:4px 12px;font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em;margin:0 0 22px}
 .lede{font-size:clamp(18px,2vw,21px);max-width:58ch;margin:22px 0 28px;color:var(--soft)}
 
 .nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:3px solid var(--ink)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.brand{display:flex;align-items:center;gap:10px;font:700 22px var(--display);text-decoration:none;text-transform:uppercase}
+.brand{display:flex;align-items:center;gap:10px;font:400 26px var(--display);letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
 .nav nav{display:flex;align-items:center;gap:22px;font-weight:500}
 .nav nav a:not(.btn){text-decoration:none}
 .nav nav a:not(.btn):hover{color:var(--red)}
@@ -45,12 +45,12 @@ body.flipping .panel.on{opacity:1}
 
 .cards{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:c}
 .cards li{counter-increment:c;background:var(--card);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:22px}
-.cards li::before{content:counter(c);display:grid;place-items:center;width:38px;height:38px;border:3px solid var(--ink);background:var(--yellow);font:700 18px var(--display);margin-bottom:14px}
+.cards li::before{content:counter(c);display:grid;place-items:center;width:38px;height:38px;border:3px solid var(--ink);background:var(--yellow);font:400 22px var(--display);margin-bottom:14px}
 .cards p{margin:8px 0 0;color:var(--soft)}
 
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .stat{background:var(--ink);color:var(--paper);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--red);padding:22px}
-.stat b{display:block;font:700 46px/1 var(--display);color:var(--yellow);margin-bottom:10px}
+.stat b{display:block;font:400 56px/1 var(--display);letter-spacing:.03em;color:var(--yellow);margin-bottom:10px}
 .note{max-width:70ch;margin:26px 0 0;color:var(--soft)}
 
 .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
