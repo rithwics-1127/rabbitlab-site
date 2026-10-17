@@ -58,10 +58,12 @@ h3{font-size:26px}
 .note{max-width:70ch;margin:26px 0 0;color:var(--soft)}
 
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
-.person{display:flex;gap:18px;align-items:flex-start;background:var(--card);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:20px}
+.person{display:flex;flex-direction:column;gap:16px;background:var(--card);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:20px}
+.person .who{display:flex;gap:18px;align-items:center}
 .person img{border-radius:50%;border:3px solid var(--ink);flex:none}
-.person p{margin:6px 0 0;color:var(--soft)}
-.person .role{color:var(--red);font-weight:700;margin-top:4px}
+.person .role{margin:4px 0 0;color:var(--red);font-weight:700}
+.facts{list-style:none;margin:0;padding:14px 0 0;border-top:2px solid var(--ink);color:var(--soft);font-size:15px;line-height:1.5}
+.facts li+li{margin-top:6px}
 
 .cta-box{margin-block:24px 40px;padding:44px 32px;background:var(--yellow);border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);text-align:center}
 .cta-box h2{margin-bottom:12px}
