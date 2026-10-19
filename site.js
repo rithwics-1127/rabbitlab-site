@@ -14,7 +14,7 @@
     i = k;
     img.src = srcs[k];
     const c = cells[k], key = c.classList.contains("key");
-    tag.textContent = key ? "Key · animator" : "In-between · Rabbit AI's job";
+    tag.textContent = key ? "Key · animator" : "In-between · artist-drawn";
     tag.classList.toggle("tag-ai", !key);
     cells.forEach((x, j) => x.classList.toggle("on", j === k));
   };
