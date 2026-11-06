@@ -23,11 +23,11 @@
 .lead{font-weight:700;font-size:clamp(24px,2.6vw,38px);letter-spacing:-.025em;line-height:1.1;margin:0 0 18px}
 .lead span{transition:opacity .2s}
 .lead .b{color:var(--deep)}
-.boxB{height:480vh}
+.boxB{height:280vh}
 .jab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px 56px;align-items:center}
 .shot{position:relative;margin:0;border:1px solid var(--foam);height:min(60svh,620px)}
-.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:44px 16px 16px;visibility:hidden}
-.shot img.on{visibility:visible}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:44px 16px 16px;opacity:0;transition:opacity .09s linear}
+.shot img.on{opacity:1}
 .chip{position:absolute;top:12px;left:12px;z-index:1;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;background:var(--navy);color:#fff}
 .chip.ib{background:var(--sky)}
 .fno{position:absolute;top:12px;right:12px;z-index:1;font:400 11px/1 var(--mono);letter-spacing:.08em;color:var(--deep);padding:7px 0}
