@@ -21,8 +21,9 @@
 .piece{position:relative;border-top:1px solid var(--sky)}
 .piece .sticky{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:58px}
 .lead{font-weight:700;font-size:clamp(24px,2.6vw,38px);letter-spacing:-.025em;line-height:1.1;margin:0 0 18px}
-.lead span{transition:opacity .2s}
+.lead span{transition:opacity .2s,color .2s}
 .lead .b{color:var(--deep)}
+.lead .b.ib{color:#3b8bbd}
 .boxB{height:280vh}
 .jab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px 56px;align-items:center}
 .shot{position:relative;margin:0;border:1px solid var(--foam);height:min(60svh,620px)}
@@ -186,7 +187,7 @@ i.t{width:0;height:11px;border-left:2px solid var(--sky)}
     chip.textContent = t[1]; chip.classList.toggle("ib", ib);
     what.textContent = t[0]; what.classList.toggle("ib", ib); why.textContent = t[2];
     fno.textContent = "Frame " + c.querySelector("b").textContent + " · " + (k + 1) + " of " + cells.length;
-    la.style.opacity = ib ? 0.25 : 1; lb.style.opacity = ib ? 1 : 0.25;
+    la.style.opacity = ib ? 0.25 : 1; lb.style.opacity = ib ? 1 : 0.25; lb.classList.toggle("ib", ib);
   };
   const update = () => {
     const r = sect.getBoundingClientRect(), span = sect.offsetHeight - innerHeight;
