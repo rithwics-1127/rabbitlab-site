@@ -1,101 +1,159 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Rabbit Labs · The AI in-betweening engine for 2D animation</title>
-  <meta name="description" content="Rabbit Labs turns your key drawings and timing chart into clean, editable vector in-betweens. Animators review, keep what works and retake the rest.">
-  <meta property="og:title" content="Rabbit Labs · Draw the keys. We draw the in-betweens.">
-  <meta property="og:description" content="Editable vector in-betweens from your keys and timing chart, reviewed by your animators.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rabbitlab.ai/">
-  <meta property="og:image" content="https://rabbitlab.ai/assets/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f5f0e6">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
-  <link rel="preconnect" href="https://api.fontshare.com">
-  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
-  <link rel="stylesheet" href="styles.css?v=8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rabbit Labs · Give animators their time back</title>
+<meta name="description" content="Rabbit Labs draws the in-betweens from your animators' keys and timing, as clean vector lines they can edit, keep or retake.">
+<meta property="og:title" content="Rabbit Labs · Give animators their time back">
+<meta property="og:description" content="Your animators draw the keys. We draw the in-betweens, as clean vector lines they can edit, keep or retake.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rabbitlab.ai/">
+<meta property="og:image" content="https://rabbitlab.ai/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=9">
+<style>
+.piece{position:relative;border-top:1px solid var(--sky)}
+.piece .sticky{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:58px}
+.lead{font-weight:700;font-size:clamp(28px,3.8vw,56px);letter-spacing:-.03em;line-height:1.04;margin:0 0 8px}
+.lead b{color:var(--deep);font-weight:700;transition:opacity .3s}
+.stage{display:block;width:100%;height:auto;max-height:64svh}
+.hopB{height:230vh}
+.d.draw{opacity:var(--a,0)}
+.mk.ib{opacity:var(--mo,.3)}
+.note{color:var(--deep);opacity:.7;margin:4px 0 0}
+</style>
 </head>
 <body>
-<header class="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="#top"><img src="assets/favicon.svg" width="30" height="30" alt="">Rabbit&nbsp;Labs</a>
+<header class="head">
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="assets/logo.svg" alt="Rabbit Labs" width="136" height="24"></a>
     <nav aria-label="Main">
-      <a href="#how">How it works</a>
-      <a href="#results">Results</a>
-      <a href="#team">Team</a>
-      <a class="btn btn-sm" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Book a call</a>
+      <a class="nav" href="#how">How it works</a><a class="nav" href="#results">Results</a><a class="nav" href="#team">Team</a>
+      <a class="book" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Book a call</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero wrap">
-    <p class="kicker">AI in-betweening for 2D animation</p>
-    <h1>Draw the keys.<br><span class="hl">We draw the in&#8209;betweens.</span></h1>
-    <p class="lede">Rabbit Labs turns your key drawings and timing chart into clean, editable vector in-betweens. Your animators review, keep what works and retake the rest.</p>
-    <div class="ctas">
-      <a class="btn" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Pilot it on your shot</a>
-      <a class="btn btn-ghost" href="mailto:founders@rabbitlab.ai">founders@rabbitlab.ai</a>
+  <section class="wrap hero">
+    <p class="mono">Rabbit Labs — in-betweening for 2D animation</p>
+    <h1>Give animators<br><span class="scrib">their time back.<svg viewBox="0 0 600 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13C70 7 150 17 230 11S390 6 470 12 570 15 596 9"/><path d="M26 19C130 13 270 21 410 16S548 14 588 17"/></svg></span></h1>
+    <div class="hero-foot">
+      <p><b>Your animators draw the keys. We draw the in&#8209;betweens</b>, on their timing, as clean vector lines they can edit, keep or retake.</p>
+      <div class="ctas"><a class="btn" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Pilot it on your shot</a><a class="tlink" href="mailto:founders@rabbitlab.ai">founders@rabbitlab.ai</a></div>
     </div>
   </section>
 
-  <section class="wrap demo" aria-label="What Rabbit Labs does">
-    <div class="stage" id="stage">
-      <img id="stage-img" src="assets/p43.webp" width="622" height="720" alt="Hand-drawn boxer throwing a jab to the body">
-      <span class="tag" id="stage-tag">Key · animator</span>
-    </div>
-    <ol class="strip" id="strip" aria-label="Drawings in the punch"><li class="cell key" data-i="0" data-frames="2"><img src="assets/p43.webp" width="622" height="720" alt="" loading="lazy"><span>Key</span></li><li class="cell ib" data-i="1" data-frames="2"><img src="assets/p45.webp" width="622" height="720" alt="" loading="lazy"><span>In-between</span></li><li class="cell key" data-i="2" data-frames="2"><img src="assets/p47.webp" width="622" height="720" alt="" loading="lazy"><span>Key</span></li><li class="cell ib" data-i="3" data-frames="4"><img src="assets/p49.webp" width="622" height="720" alt="" loading="lazy"><span>In-between</span></li><li class="cell key" data-i="4" data-frames="1"><img src="assets/p53.webp" width="622" height="720" alt="" loading="lazy"><span>Key</span></li></ol>
-    <div class="flip">
-      <button class="btn btn-sm" id="play" type="button" aria-pressed="true">❚❚ Pause</button>
-      <button class="btn btn-sm btn-ghost" id="slow" type="button" aria-pressed="false">Slow motion</button>
-      <p class="cap">The job, shown on a real hand-drawn jab at the artist's own 24&nbsp;fps timing: the animator draws the 3 keys; the in-betweens between them are what Rabbit Labs is built to draw. Every drawing here is the artist's. Drawings: Blender Studio, CC&nbsp;BY&nbsp;4.0.</p>
-    </div>
-  </section>
-
-  <section class="wrap" id="how">
-    <h2>How it works</h2>
-    <ol class="cards">
-      <li><h3>Import keys</h3><p>Vector line art (SVG or Grease Pencil) plus your exposure sheet. Holds and timing stay yours.</p></li>
-      <li><h3>Generate</h3><p>Our model matches lines between keys and moves them along the motion, on the frames your timing chart asks for.</p></li>
-      <li><h3>Review</h3><p>Scrub with onion skin, accept drawing by drawing, undo anything. Locked drawings are never touched.</p></li>
-    </ol>
-  </section>
-
-  <section class="wrap" id="results">
-    <h2>Measured, not promised</h2>
-    <div class="stats">
-      <div class="stat"><b>~2.4&nbsp;px</b><span>average error on held-out 3D-rendered line art. Simply repeating the key is off by 5.2&nbsp;px on the same set.</span></div>
-      <div class="stat"><b>&lt;1&nbsp;s</b><span>per in-between, on a laptop.</span></div>
-      <div class="stat"><b>100%</b><span>vector. Every line stays editable in your pipeline.</span></div>
-    </div>
-    <p class="note">Loose hand-drawn pencil is harder, and that's where we're improving fastest. Your art stays private and is never used for training without your permission.</p>
-  </section>
-
-  <section class="wrap" id="team">
-    <h2>Team</h2>
-    <div class="people">
-      <article class="person"><div class="who"><img src="assets/rithwick.webp" width="88" height="88" alt="Rithwick Sethi"><div><h3>Rithwick Sethi</h3><p class="role">Co-founder · CEO</p></div></div><ul class="facts"><li>MS AI Engineering at CMU</li><li>Built AI and automation tooling at Apple</li><li>Published 7 research papers</li></ul></article>
-      <article class="person"><div class="who"><img src="assets/om.webp" width="88" height="88" alt="Om Kulkarni"><div><h3>Om Kulkarni</h3><p class="role">Co-founder · CTO</p></div></div><ul class="facts"><li>MS ECE and ETIM at CMU</li><li>Worked on AI workloads at Arm</li><li>Built data pipelines at Wells Fargo</li></ul></article>
-      <article class="person"><div class="who"><img src="assets/hasita.webp" width="88" height="88" alt="Hasita Bommakanti"><div><h3>Hasita Bommakanti</h3><p class="role">Co-founder · COO</p></div></div><ul class="facts"><li>MS ECE and ETIM at CMU</li><li>Built AI systems at Apple</li><li>Leads studio outreach</li></ul></article>
+  <section class="piece hopB" id="piece">
+    <div class="wrap sticky">
+      <p class="lead">Animators draw the keys. <b id="lead-b">We draw everything in between.</b></p>
+      <svg class="stage" viewBox="0 0 1200 450" role="img" aria-label="A rabbit's hop: two keys and a breakdown by the animator, two in-betweens by Rabbit Labs">
+        <path class="arc" d="M110 300 Q600 -90 1090 300"/>
+        <g id="dw"></g>
+        <g id="chart"></g>
+      </svg>
+      <p class="mono note">Illustration of the job, not model output.</p>
     </div>
   </section>
 
-  <section class="wrap cta-box">
-    <h2>Try it on one of your shots.</h2>
-    <p>Send two keys and a timing chart. We'll send back editable in-betweens.</p>
-    <div class="ctas">
-      <a class="btn" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Book a call</a>
-      <a class="btn btn-ghost" href="mailto:founders@rabbitlab.ai?subject=Pilot">Email us</a>
+
+  <section class="wrap card">
+    <p class="mono">Why</p>
+    <p class="say">One second of animation is up to 24 drawings. <span>Almost every one is still drawn by hand.</span></p>
+  </section>
+
+  <section class="wrap card">
+    <div class="rows">
+      <div class="row"><b>1,875</b><p><strong>artist-hours</strong> to draw one 22-minute TV episode.</p></div>
+      <div class="row"><b>~½</b><p>of those hours go to the <strong>in-betweens</strong>, the drawings between the keys.</p></div>
+      <div class="row"><b>4 for 3</b><p>Our base case: give each animator 10 hours a week back and the same team makes <strong>four episodes in the time of three</strong>.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap card" id="how">
+    <p class="mono">How it works</p>
+    <div class="cols">
+      <div><p class="mono">01</p><h3>Drop in keys</h3><p>Your key drawings as vector line art (SVG or Grease Pencil), with your exposure sheet. Holds and timing stay yours.</p></div>
+      <div><p class="mono">02</p><h3>Generate</h3><p>Our model matches each line between the keys and moves it along the motion, on the frames your timing calls for.</p></div>
+      <div><p class="mono">03</p><h3>Fix</h3><p>Point at a wrong line and pick a retake. Only that line is redrawn. Lock anything you've fixed by hand.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap card">
+    <p class="mono">What stays yours</p>
+    <p class="say">Your timing. <span>Your lines.</span> Your building.</p>
+    <p class="small">We draw on the frames your sheet asks for. Output is vector, so nobody redraws a frame for a note. The model runs on your own machines, and your art is never used for training without your permission.</p>
+  </section>
+
+  <section class="wrap card" id="results">
+    <p class="mono">Measured, not promised</p>
+    <div class="rows">
+      <div class="row"><b>82%</b><p>of drafts pass our automatic check on <strong>3D-rendered characters the model has never seen</strong> (252 of 306).</p></div>
+      <div class="row"><b>&lt;1s</b><p>per in-between, <strong>on a laptop</strong>.</p></div>
+    </div>
+    <p class="small">Loose hand-drawn pencil is harder, and that's where we're improving fastest.</p>
+  </section>
+
+  <section class="wrap card" id="team">
+    <p class="mono">Team</p>
+    <div class="team">
+      <article><img src="assets/rithwick.webp" alt="Rithwick Sethi"><h3>Rithwick Sethi</h3><p class="role">Co-founder, CEO</p><ul><li>MS AI Engineering at CMU</li><li>Built AI and automation tooling at Apple</li><li>Published 7 research papers</li></ul></article>
+      <article><img src="assets/om.webp" alt="Om Kulkarni"><h3>Om Kulkarni</h3><p class="role">Co-founder, CTO</p><ul><li>MS ECE and ETIM at CMU</li><li>Worked on AI workloads at Arm</li><li>Built data pipelines at Wells Fargo</li></ul></article>
+      <article><img src="assets/hasita.webp" alt="Hasita Bommakanti"><h3>Hasita Bommakanti</h3><p class="role">Co-founder, COO</p><ul><li>MS ECE and ETIM at CMU</li><li>Built AI systems at Apple</li><li>Leads studio outreach</li></ul></article>
+    </div>
+  </section>
+
+  <section class="end">
+    <div class="wrap">
+      <p class="mono">Try it on one of your shots</p>
+      <a class="giant" href="mailto:founders@rabbitlab.ai?subject=Pilot">Send us two keys&nbsp;→</a>
+      <p>and a timing chart. We'll send back editable in-betweens.</p>
+      <div class="ctas"><a class="btn" href="https://calendly.com/founders-rabbitlab/1-1-founders" target="_blank" rel="noopener">Book a call</a><a class="tlink" href="mailto:founders@rabbitlab.ai">founders@rabbitlab.ai</a></div>
     </div>
   </section>
 </main>
 
-<footer class="wrap foot">© 2026 Rabbit Labs · Pittsburgh, PA · <a href="mailto:founders@rabbitlab.ai">founders@rabbitlab.ai</a></footer>
-<script src="site.js?v=5" defer></script>
+<footer class="wrap foot mono"><span>© 2026 Rabbit Labs · an animator's best friend · Pittsburgh, PA</span><a href="mailto:founders@rabbitlab.ai">founders@rabbitlab.ai</a></footer>
+
+<script src="hop.js?v=1"></script>
+<script>
+const progress = (el) => { const r = el.getBoundingClientRect(), span = el.offsetHeight - innerHeight; return Math.max(0, Math.min(1, -r.top / span)); };
+// The keys and breakdown are there from the start; as you scroll, the two in-betweens fade in one after the
+// other and the second half of the headline comes up with them. The shown progress eases towards the scroll.
+(() => {
+  const { drawings, render, chart } = window.Hop;
+  const sect = document.getElementById("piece");
+  const dw = document.getElementById("dw"), ch = document.getElementById("chart");
+  const leadB = document.getElementById("lead-b");
+  dw.innerHTML = drawings.map((d) => `<g class="d ${d.kind} ${d.kind === "ib" ? "draw" : ""}" transform="translate(${d.x} ${d.y})">${render(d.p)}</g>`).join("");
+  ch.innerHTML = chart(405);
+  const ibs = [...dw.querySelectorAll(".draw")], ibMarks = [...ch.querySelectorAll(".mk.ib")];
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const draw = (p) => {
+    const pr = [clamp((p - 0.12) / 0.3), clamp((p - 0.5) / 0.3)];
+    ibs.forEach((g, i) => {
+      g.style.setProperty("--a", String(pr[i]));
+      ibMarks[i].style.setProperty("--mo", String(0.3 + 0.7 * pr[i]));
+    });
+    leadB.style.opacity = 0.25 + 0.75 * (pr[0] + pr[1]) / 2;
+  };
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let target = progress(sect), cur = target, raf = 0;
+  const tick = () => {
+    cur += (target - cur) * 0.16;
+    if (still || Math.abs(target - cur) < 0.0008) cur = target;
+    draw(cur);
+    raf = cur !== target ? requestAnimationFrame(tick) : 0;
+  };
+  addEventListener("scroll", () => { target = progress(sect); if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+  draw(cur);
+})();
+</script>
 </body>
 </html>
