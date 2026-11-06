@@ -36,19 +36,6 @@ h1{font-weight:800;font-size:clamp(52px,10.6vw,168px);line-height:.92;letter-spa
 .btn:hover{background:var(--deep)}
 .tlink{font-weight:500;text-underline-offset:5px;text-decoration-color:var(--sky)}
 
-/* Rabbit drawings (hop.js): keys and the breakdown in navy, in-betweens in sky */
-.rb *{fill:#fff;stroke:var(--navy);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
-.rb line{fill:none}
-.rb .eye{fill:var(--navy);stroke:none}
-.ib .rb *{stroke:var(--sky);stroke-width:3.4}
-.ib .rb .eye{fill:var(--sky)}
-.arc{fill:none;stroke:var(--sky);stroke-width:2;stroke-dasharray:1.5 8;stroke-linecap:round}
-.tline{stroke:var(--sky);stroke-width:1.5}
-.mk{stroke:var(--navy);stroke-width:2;fill:#fff}
-.mk.ib{stroke:var(--sky)}
-.mk .mk-label{stroke:none;font:400 11px var(--mono);letter-spacing:.08em;fill:var(--deep);text-anchor:middle;text-transform:uppercase}
-.mk-label.ib{fill:var(--sky)}
-
 /* Statements and number rows */
 .card{min-height:72svh;display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--sky);padding:96px 0}
 .card>.mono{color:var(--deep);margin:0 0 28px}
