@@ -43,7 +43,7 @@ h1{font-weight:800;font-size:clamp(44px,6.8vw,108px);line-height:.92;letter-spac
 .say span{color:var(--deep)}
 .rows{border-top:1px solid var(--navy)}
 .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:32px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--foam)}
-.row b{font-weight:800;font-size:clamp(44px,5.2vw,80px);line-height:.9;letter-spacing:-.05em}
+.row b{font-weight:700;font-size:clamp(30px,3.8vw,58px);line-height:1.04;letter-spacing:-.035em}
 .row p{margin:0;font-size:clamp(16px,1.4vw,20px);color:var(--deep);max-width:30ch}
 .row p strong{color:var(--navy);font-weight:600}
 .small{color:var(--deep);margin:24px 0 0;max-width:62ch}
