@@ -22,7 +22,7 @@ a{color:inherit}
 .head nav a:hover{color:var(--navy)}
 .head nav a.book{color:var(--navy);font-weight:600;border-bottom:1.5px solid var(--navy);padding-bottom:1px}
 
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:110px 0 48px}
+.hero{display:flex;flex-direction:column;padding:clamp(108px,15vh,160px) 0 64px}
 .hero .mono{color:var(--deep);margin:0 0 20px}
 h1{font-weight:800;font-size:clamp(44px,6.8vw,108px);line-height:.92;letter-spacing:-.045em;margin:0}
 .scrib{position:relative;display:inline-block;color:var(--deep)}
