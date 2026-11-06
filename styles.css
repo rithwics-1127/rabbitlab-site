@@ -53,7 +53,7 @@ h1{font-weight:800;font-size:clamp(44px,6.8vw,108px);line-height:.92;letter-spac
 .cols p{margin:0;color:var(--deep)}
 .cols .mono{color:var(--deep);margin:0}
 .team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
-.team img{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block;margin-bottom:16px;box-shadow:0 0 0 3px var(--foam)}
+.team img{width:128px;height:128px;border-radius:50%;object-fit:cover;display:block;margin-bottom:20px;box-shadow:0 0 0 4px var(--foam)}
 .team h3{margin:0;font-size:20px;font-weight:700;letter-spacing:-.01em}
 .team .role{margin:2px 0 10px;color:var(--deep)}
 .team ul{list-style:none;margin:0;padding:0;color:var(--deep);font-size:15px}
@@ -68,6 +68,7 @@ h1{font-weight:800;font-size:clamp(44px,6.8vw,108px);line-height:.92;letter-spac
   .head nav a.nav{display:none}
   .hero-foot,.row{grid-template-columns:minmax(0,1fr);gap:10px}
   .cols,.team{grid-template-columns:minmax(0,1fr);gap:28px}
+  .team img{width:104px;height:104px}
   .card,.end{padding:64px 0;min-height:auto}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
